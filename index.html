@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PHAMTOM000 Motors</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        /* MENU */
+        .navbar{
+            background-color: black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        .navbar a:hover{
+            color: yellow;
+        }
+
+        /* SECCIONES */
+        .content{
+            display: none;
+            padding: 40px;
+            text-align: center;
+            min-height: 100vh;
+            color: white;
+
+            /* IMAGEN DE FONDO */
+            background-image: url("mi_empresa.jpg");
+            background-size: 5000px 3000px;
+            background-position: center;
+
+
+        }
+
+        /* Mostrar inicio al abrir */
+        #inicio{
+            display: block;
+        }
+
+        h2{
+
+            color:blue
+        }
+
+        .title{
+            font-size: 40px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+       
+
+        /* BOTON SABER MAS */
+        .btn{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .btn:hover{
+            background-color: darkblue;
+        }
+
+    </style>
+
+    <style>
+        footer {
+            text-align: center;
+            background-color: lightgray;
+            padding: 10px;
+        }
+    </style>
+
+
+    <style>
+
+        /* Centra el formulario y ajusta el ancho para el formulario de cobtacto */
+        .form-container {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        }
+
+        /* Alinea los elementos en columna */
+        .contacto-form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        }
+  
+        /* Ajusta los campos de texto y el área de mensaje */
+        .contacto-form input,
+        .contacto-form textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box; 
+        }
+
+
+        /* Estilo básico para el botón */
+        .btn-enviar {
+        padding: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        }
+
+
+
+    </style>
+
+
+
+    <script>
+
+        function mostrar(seccion){
+
+            document.getElementById("inicio").style.display = "none";
+            document.getElementById("nosotros").style.display = "none";
+            document.getElementById("productos").style.display = "none";
+            document.getElementById("contacto").style.display = "none";
+
+            document.getElementById(seccion).style.display = "block";
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav class="navbar">
+
+        <a href="#" onclick="mostrar('inicio')">INICIO</a>
+
+        <a href="#" onclick="mostrar('nosotros')">NOSOTROS</a>
+
+        <a href="#" onclick="mostrar('productos')">PRODUCTOS Y SERVICIOS</a>
+
+        <a href="#" onclick="mostrar('contacto')">CONTACTENOS</a>
+
+    </nav>
+
+    <!-- INICIO -->
+    <section id="inicio" class="content">
+
+            
+
+            <div style="height: 150px;"></div>
+
+            <h2 class="title">INICIO</h2>
+
+            <p>
+                PHAMTOM000 Motors es una empresa automotriz que busca crear <br>
+                vehículos sostenibles usando tecnologías limpias y modernas.
+            </p>
+
+
+            <h3>MERCADO OBJETIVO</h3>
+
+            <p> Nuestros productos están dirigidos a: 
+                <br>
+                <br>
+                Clientes particulares<br>
+                Empresas y flotas corporativas<br>
+                Mercado de movilidad sostenible<br>
+                Segmento de lujo
+            </p>
+
+
+
+            
+
+         <!--   <a href="#" class="btn">Saber más</a>. -->
+
+   
+
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="content">
+
+        
+
+            <h2 class="title">NOSOTROS</h2>
+            
+            <h3>MISIÓN </h3>
+
+            <p>
+                Revolucionar el <br>
+                acceso a los automóviles, <br>
+                desarrollando soluciones innovadoras <br> 
+                que combinen diseño, tecnología y <br>
+                accesibilidad para transformar la <br>
+                movilidad en una experiencia más eficiente, <br> 
+                placentera y responsable con el medio ambiente. <br>
+
+            </p>
+
+
+            <h3>VISIÓN</h3>
+
+            <p>
+
+              Se visualiza un futuro en el que la empresa <br>
+              se haya consolidado como líder en la industria <br>
+              automotriz, con una presencia nacional e <br>
+              internacional destacada, generando empleo <br>
+              y promoviendo avances tecnológicos que <br>
+              redefinan la experiencia de conducción. <br>
+
+
+            </p>
+
+            <h3>OBJETIVO GENERAL</h3>
+
+            <p>
+                Crear una empresa automotriz que ofrezca vehículos sostenibles 
+                de alto rendimiento, <br> 
+                incorporando tecnologías avanzadas en 
+                movilidad y energías limpias, posicionándose <br>
+                como referente en innovación dentro del sector automotriz.
+                
+            </p>
+
+            <h3>OBJETIVOS ESPECÍFICOS</h3>
+
+            <p>
+                Diseñar vehículos eléctricos e híbridos. <br>
+                Reducir la contaminación ambiental. <br>
+                Trabajar con centros de investigación. <br>
+                Ofrecer vehículos inteligentes. <br>
+                Expandir la empresa a otros países. 
+            </p>
+            
+         <!--   <a href="#" class="btn">Saber más</a>. -->
+
+       
+
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="content">
+            
+            <div style="height: 200px;"></div>
+
+            <h2 class="title">PRODUCTOS Y SERVICIOS</h2>
+
+            <p>
+                Ofrecemos automóviles innovadores con tecnología avanzada,
+                seguridad y comodidad.
+            </p>
+
+            <p>
+
+                <img src="electricos.jpg" height="200" width="250">
+                <img src="hibridos.jpg" height="200" width="250">
+                <img src="lujo.jpg" height="200" width="250">
+                <img src="mantenimiento.jpg" height="200" width="250">
+
+           <p>Vehículos eléctricos &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+            Vehículos híbridos &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+            Vehículos de lujo &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+            Mantenimiento y soporte
+           </p>
+
+
+        
+
+        <!--   <a href="#" class="btn">Saber más</a>. -->
+
+    
+
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="content">
+
+            <div style="height: 150px;"></div>    
+
+            
+            <h2 class="title">CONTACTENOS</h2>
+
+
+            <div class="form-container">
+              <form action="#" method="post" class="contacto-form">
+            
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electronico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit" class="btn-enviar">Enviar datos</button>
+            
+              </form>
+            </div>
+            
+
+     <!--       <a href="#" class="btn">Saber más</a>.   -->
+    
+
+    </section>
+
+
+     <footer>
+        Desarrollado por Samuel Muñoz, grado 11, virtual
+    </footer>
+
+</body>
+
+</html>
